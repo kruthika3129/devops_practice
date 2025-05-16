@@ -14,14 +14,14 @@ public class WebPageTest {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         Thread.sleep(2000);
-        driver.get("https://github.com/kruthika3129/devops_practice");
+        driver.get("https://kruthika3129.github.io/example/");
         // Note: You should use your own GitHub URL here
     }
 
     @Test
     public void titleValidationTest() {
         String actualTitle = driver.getTitle();
-        String expectedTitle = "";
+        String expectedTitle = "My Simple Website";
         Assert.assertEquals(actualTitle, expectedTitle);
         assertTrue(true, "");
     }
@@ -32,3 +32,4 @@ public class WebPageTest {
         driver.quit();
     }
 }
+
